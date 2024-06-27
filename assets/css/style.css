@@ -1,0 +1,203 @@
+*{
+  color:#fff;
+  background-color: rgb(20, 20, 46);
+}
+
+/*font sizing*/
+h1 {
+  font-size: 200%;
+  background-color: rgb(35, 35, 110);
+}
+
+h2 {
+  font-size: 300%;
+  color: #fff;
+}
+
+
+/* setting header */
+header {
+  display: flex;
+  /* Spaces title and nav element*/
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: rgb(35, 35, 110);
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 300px;
+  background-color: rgb(35, 35, 110);
+  text-align:center;
+}
+
+nav a{
+  background-color: rgb(35, 35, 110);
+  flex:auto;
+  justify-content: space-between;
+}
+
+/* position profile picture*/
+.profile{
+  max-height:400px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+/*setting sidebar */
+main aside {
+  float: left;
+  margin: 25px;
+  padding-right: 10px;
+  border-right: solid rgb(72, 72, 212);
+  text-align: end;
+  flex: 1 0 0px;
+}
+
+/*setting content for all sections*/
+main section {
+  display: flex;
+  flex-direction: row;
+
+}
+
+/*setting content for about me */
+main article {
+  float: left;
+  margin: 25px;
+  width: 33%;
+  flex: 3 0 0px;
+
+}
+
+/*setting container that holds cards*/
+.container{
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/*creating subtitle for every card*/
+.card-footer{
+  background-color:rgb(35, 35, 121) ;
+  font-size: 200%;
+  text-decoration: none;
+  border:none;
+}
+
+/*setting image for primary card (bigger than the other cards)*/
+.card-main{
+  border:3px solid rgb(35, 35, 121);
+  width: 100%;
+  margin-left:2px;
+  margin-right:2px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+/*setting image for every other card*/
+.card img{
+  border:3px solid rgb(35, 35, 121);
+  min-width:600px;
+  margin-left:2px;
+  margin-right:2px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+/*setting contact contents*/
+.contact{
+  display:flex;
+  justify-content: space-between;
+  font-size:150%;
+  
+}
+
+/*position contact elements*/
+.contact a{
+  padding-right:100px;
+  border-right: 2px solid rgb(255, 255, 255);
+}
+
+/*setting footer*/
+.footer{
+  text-align:center;
+  background-color: rgb(35, 35, 110);
+  font-size:150%;
+}
+ 
+/*blur cards as they are hovered*/
+.card:hover {
+  cursor:pointer;
+  filter:blur(5px);
+  transition: all 0.5s linear;
+}
+
+/*highlight nav elements when hovered*/
+.navele a:hover{
+  cursor:pointer;
+  background-color: rgb(35, 133, 133);
+}
+
+
+@media screen and (max-width: 950px){
+  header{
+    flex-direction:column;
+  }
+  main section{
+    flex-direction: column;
+  }
+  main aside {
+    border-right:none;
+    border-bottom: solid rgb(72, 72, 212);
+    text-align: center;
+    width: 100%;
+    flex: 1 0 0px;
+  }
+  main article{
+    width:100%;
+  }
+  .card-main{
+    max-width: 400px;
+    max-height: 400px;
+  }
+  .card img{
+    max-width: 400px;
+    max-height: 400px;
+  }
+  .contact{
+    text-align:center;
+  }
+
+}
+
+@media screen and (max-width: 1466px){
+  .contact{
+    flex-direction:column;
+  }
+  .contact a{
+    border: 0px;
+  }
+  .container{
+    flex-direction:column;
+  }
+   .card-main{
+    max-width: 400px;
+    max-height: 400px;
+  }
+  .card img{
+    max-width: 400px;
+    max-height: 400px;
+  }
+  .contact{
+    text-align:center;
+  }
+
+}

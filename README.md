@@ -22,7 +22,7 @@ Projects that are listed in the project are
 
 ## Mock-Up
 
-The following animation shows the web application's appearance and functionality:
+Brief overview of the portfolio
 
 ![portfolio demo](./assets/images/mock%20up.png)
 
